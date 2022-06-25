@@ -58,4 +58,4 @@ The pipeline leverages 6 scripts defined in the `package.json` file in the root 
 ---
 ## Diagram
 
-![Pipeline Diagram](https://github.com/AsmaaHosny7/Udacticy-udagram/blob/main/screenshots/Udagram_Pipeline_Diagram.png?raw=true)
+![Pipeline Diagram](https://github.com/AsmaaHosny7/Udacticy-udagram/screenshots/Udagram_Pipeline_Diagram.png?raw=true)
