@@ -66,4 +66,4 @@ workflows:
       - deploy:
           filters:
             branches:
-              only: mainr
+              only: main
