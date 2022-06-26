@@ -12,7 +12,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy": "chmod +x ./bin/deploy.sh && ./bin/deploy.sh"
-
   },
   "private": true,
   "dependencies": {
@@ -29,11 +28,12 @@
     "@ionic/angular": "^4.1.0",
     "core-js": "^2.5.4",
     "rxjs": "~6.5.4",
+    "tslib": "^2.3.0",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
     "@angular-devkit/architect": "~0.12.3",
-    "@angular-devkit/build-angular": "~0.802.2",
+    "@angular-devkit/build-angular": "^0.803.24",
     "@angular-devkit/core": "~7.2.3",
     "@angular-devkit/schematics": "~7.2.3",
     "@angular/cli": "~8.3.25",
