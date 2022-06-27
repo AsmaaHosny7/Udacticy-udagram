@@ -9,7 +9,6 @@ jobs:
       - image: "cimg/base:stable"
     steps:
       - node/install
-      -node-version:'14.15.1'
       - node/install-yarn
       - checkout
       - run:
