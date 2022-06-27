@@ -17,8 +17,8 @@ The pipeline leverages 6 scripts defined in the `package.json` file in the root 
 ```json
 
 "scripts": {
-  "api:install": "cd udagram-api && npm install",
-  "frontend:install": "cd udagram-frontend && npm install",
+  "api:install": "cd udagram-api && npm install --force",
+  "frontend:install": "cd udagram-frontend && npm install --force",
   "api:build": "cd udagram-api && npm run build",
   "frontend:build": "cd udagram-frontend && npm run build",
   "api:deploy": "cd udagram-api && npm run deploy",
