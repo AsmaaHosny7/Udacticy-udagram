@@ -1,16 +1,15 @@
 version: 2.1
 orbs:
   node: circleci/node@5.0.2
-  aws-cli: circleci/aws-cli@2.0.3
-  eb: circleci/aws-elastic-beanstalk@1.0.0
+  aws-cli: circleci/aws-cli@2.0.6
+  eb: circleci/aws-elastic-beanstalk@2.0.1
 jobs:
   build:
     docker:
       - image: "cimg/base:stable"
     steps:
-
       - node/install
-      -node-version:'16.13'
+      -node-version:'14.15.1'
       - node/install-yarn
       - checkout
       - run:
