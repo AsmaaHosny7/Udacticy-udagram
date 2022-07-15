@@ -10,7 +10,7 @@ export AWS_PROFILE=default
 export JWT_SECRET=mysecretstring
 export URL=http://localhost:8100
 
-eb setenv  POSTGRES_USERNAME="postgres"\
+# eb setenv  POSTGRES_USERNAME="postgres"\
     # POSTGRES_PASSWORD = "postgres"\
     # POSTGRES_DB="postgres"\
     # POSTGRES_DB_PORT="5432"\
