@@ -9,11 +9,12 @@
     "start": "node ./server.js",
     "tsc": "tsc",
     "dev": "ts-node-dev --respawn --transpileOnly ./src/server.ts",
-    "prod": "tsc && node ./www/server.js",
+    "prod": "npm run tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
-    "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "chmod +x ./bin/deploy.sh && ./bin/deploy.sh"
+    "zip": "bestzip Archive.zip .",
+    "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && npm run zip && cd ..",
+    "deploy": "npm run build && eb list && eb use udagram-api-dev && eb deploy"
+    
   },
   "keywords": [],
   "author": "Gabriel Ruttner",
