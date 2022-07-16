@@ -8,7 +8,7 @@ export AWS_BUCKET=s3://asmaa-udagram
 export AWS_REGION=us-east-1
 export AWS_PROFILE=default
 export JWT_SECRET=mysecretstring
-export URL=http://localhost:8100
+export URL=udagram-api-dev.eba-8egxkpkh.us-east-1.elasticbeanstalk.com
 
 # eb setenv  POSTGRES_USERNAME="postgres"\
     # POSTGRES_PASSWORD = "postgres"\
