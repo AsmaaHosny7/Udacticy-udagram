@@ -6,7 +6,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: "cimg/base:stable"
+      -image: cimg/base:stable
     steps:
       - node/install
       - node/install-yarn
@@ -29,9 +29,10 @@ jobs:
             npm run frontend:build
   deploy:
     docker:
-      - image: "cimg/base:stable" 
+      - image: cimg/base:stable 
     steps:
-      - node/install
+      - node/install:
+          node-version: '14.15'
       - checkout
       - aws-cli/setup
       - eb/setup
